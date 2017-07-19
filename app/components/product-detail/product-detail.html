@@ -3,7 +3,34 @@
     <div>
         <h4 class="pull-right">{{ product.price }}</h4>
         <h4>{{ product.title }}</h4>
-        <p>{{ product.description }}</p>
+       <p>Future title change
+            <select name="futuredatechange" id="futuredatechange">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="" selected></option></select>
+
+        </p>
+        <p>Rating: {{ product.rating }}</p>
+        <p>Print ISSN: <input type="text" value="" size="10" maxlengh="10"></p>
+        <p>Online ISSN: <input type="text" name="ISSN" value="19390025" size="15" maxlength="10" /></p>
+        <p>Editor: {{ product.description }}</p>
+        <p>Years: <input type="text" name="Years" value="1990-" size="15" maxlength="15"></p>
+        <p>Publisher: <input type="radio" name="catg" value="APA" > APA
+            <input type="radio" name="catg" value="EPF" checked> EPF
+            <input type="radio" name="catg" value="CDN" > Canadian Psych Assoc
+            <input type="radio" name="catg" value="H&H" > Hogrefe &amp; Huber
+            <input type="radio" name="catg" value="NIMH" > National Institutes of Mental Health
+        </p>
+        <p>Topics: <br>
+            <input type="checkbox" name="topics" value="GEN" > General Topics<br>
+            <input type="checkbox" name="topics" value="BAS" > Basic Research<br>
+            <input type="checkbox" name="topics" value="APP" > Applied & Practice<br>
+            <input type="checkbox" name="topics" value="HEA" > Health / Mental Health<br>
+            <input type="checkbox" name="topics" value="SPD" checked> Social/Personality, Development, Education<br>
+            <input type="checkbox" name="topics" value="PRO" checked> Professional Issues & Public Policy<br>
+            <input type="checkbox" name="topics" value="THE" > Theory, Reviews, Methodology<br>
+
+        </p>
     </div>
     <div class="ratings">
 
